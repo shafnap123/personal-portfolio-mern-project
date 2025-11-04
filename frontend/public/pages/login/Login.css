@@ -1,0 +1,152 @@
+
+.loginmaindiv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff80;
+  border: 5px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  border-radius: 20px;
+  width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif;
+  animation: glow 3s infinite ease-in-out;
+}
+
+/* 🔹 Title inside login */
+.loginmaindiv h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #00ffff;
+  text-shadow: 0 0 20px #00ffff;
+}
+
+/* 🔹 Labels inside login */
+.loginmaindiv label {
+  align-self: flex-start;
+  font-size: 1rem;
+  margin-top: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* 🔹 Inputs inside login */
+.loginmaindiv .logindivmaininput {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  color: #00ffff;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.loginmaindiv .logindivmaininput:focus {
+  background-color: rgba(0, 255, 255, 0.1);
+  box-shadow: 0 0 15px #00ffff, 0 0 30px #00ffff80;
+}
+
+/* 🔹 Error text inside login */
+.loginmaindiv .error {
+  color: #ff5555;
+  font-size: 0.9rem;
+  text-shadow: none;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+/* 🔹 Button inside login */
+.loginmaindiv button {
+  background-color: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 10px;
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  box-shadow: 0 0 10px #00ffff80;
+}
+
+.loginmaindiv button:hover {
+  background-color: #00ffff;
+  color: #0f2027;
+  box-shadow: 0 0 25px #00ffff, 0 0 50px #00ffff80;
+  transform: scale(1.05);
+}
+
+/* 🔹 Glow animation */
+@keyframes glow {
+  0% { box-shadow: 0 0 10px #00ffff80; }
+  50% { box-shadow: 0 0 25px #00ffff; }
+  100% { box-shadow: 0 0 10px #00ffff80; }
+}
+@media (max-width: 768px) {
+  .loginmaindiv {
+    width: 80%;
+    padding: 30px;
+    margin: 40px auto;
+  }
+
+  .loginmaindiv h1 {
+    font-size: 2rem;
+  }
+
+  .loginmaindiv .logindivmaininput {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .loginmaindiv button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 10px;
+  }
+}
+
+/* Mobile phones (width ≤ 480px) */
+@media (max-width: 480px) {
+  .loginmaindiv {
+    width: 90%;
+    padding: 25px;
+    margin: 20px auto;
+    border-width: 3px;
+  }
+
+  .loginmaindiv h1 {
+    font-size: 1.8rem;
+  }
+
+  .loginmaindiv label {
+    font-size: 0.9rem;
+  }
+
+  .loginmaindiv .logindivmaininput {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .loginmaindiv button {
+    font-size: 0.95rem;
+    padding: 8px 20px;
+  }
+}
+
+/* Large screens (≥ 1200px) */
+@media (min-width: 1200px) {
+  .loginmaindiv {
+    width: 450px;
+  }
+}

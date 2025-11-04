@@ -1,0 +1,44 @@
+nav{
+display: flex;
+gap:30px;
+ 
+  padding: 20px;
+  background: linear-gradient(135deg, #10be84, #2a5eb2);
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.a{
+ 
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+
+
+
+  padding-bottom: 4px;
+  transition: color 0.3s ease;
+}
+
+.a:hover {
+  color: #04faa8;
+}
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .a {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .a {
+    font-size: 0.9rem;
+  }
+}

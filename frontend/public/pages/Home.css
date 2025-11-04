@@ -1,0 +1,158 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html, body {
+
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+    
+
+ header{
+    width:100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+ }
+
+   
+
+ .name{
+    
+
+
+ font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 990;
+   color: #00ffff;
+  display: inline-block;
+  margin-bottom: 1rem;
+  border-bottom: 4px double white;
+  padding-bottom: 6px;
+  width: fit-content;
+   text-shadow: 0 0 10px #00ffff80;
+}
+.color-split {
+  font-weight: 700;
+}
+
+.color1 {
+  color: aqua;
+}
+
+.color2 {
+  color: #4da6ff;
+}
+
+.navdiv{
+    display: flex;
+      align-items: center; 
+        
+      
+      
+      justify-content: space-around;
+}
+header .imagediv{
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+   flex-direction: column;
+  
+}
+header .imagediv .img{
+    height: 200px;
+  border-radius: 50%;
+  border: 5px solid #00ffff;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+   transition: transform 0.3s ease; 
+
+}
+.img:hover {
+  transform: scale(1.05);
+}
+
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #00ffff;
+  margin-bottom: 1rem;
+}
+.hero-title span {
+  color: #a5d6a7;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #cfd8dc;
+}
+/* Paragraph Styling */
+.hero-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #e0f7fa;
+}
+.hero-description .highlight {
+  
+  color: #b2ff59;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .navdiv {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+  }
+
+  .img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+

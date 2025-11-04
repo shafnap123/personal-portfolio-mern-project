@@ -1,0 +1,88 @@
+.contactmain{
+    
+       display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 60px;
+  padding: 40px;
+  background-color: #121212;
+  border-radius: 20px;
+}
+.contactinputdiv .contactinputdivinput{
+
+    width: 500px;
+    height: 50px;
+
+} 
+.contactmainseconddiv span {
+    color: #b2ff59;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+
+.contactmainseconddiv,
+.contactinputdiv {
+  width: 48%;
+  max-width: 550px;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  color: #ccc;
+} 
+.contactinputdivinput::placeholder,
+.contactinputdivmessage::placeholder {
+  color: #aaa;
+}
+.contactinputdivmessage {
+  height: 150px;
+  width:500px;
+}
+ .contactmainseconddiv .contactmainh1{
+    color:red;
+
+}
+.contactmainseconddiv a {
+  color: aqua;
+  text-decoration: none;
+  font-weight: 500;
+ 
+}
+
+.contactmainseconddiv a:hover {
+  color: #00ffffc7; 
+  text-decoration: underline;
+}
+small{
+  color:red;
+}
+@media (max-width: 768px) {
+  .contactmain {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactmainseconddiv,
+  .contactinputdiv {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .contactinputdivinput,
+  .contactinputdivmessage {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactmainh1 {
+    font-size: 1.8rem;
+  }
+
+  .contactinputdivinput,
+  .contactinputdivmessage {
+    font-size: 0.9rem;
+  }
+}
