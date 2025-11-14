@@ -1,0 +1,16 @@
+.signupmaininput{
+    width:100px;
+    height:50px;
+}
+.signupmaininput{
+width:450px;
+height:50px;
+}
+.Signupmain{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}

@@ -1,7 +1,9 @@
-import axios from 'axios';
-import { Button } from '../../public/pages/button/Button'
+
+
 import './Work.css'
 import { useRef, useState } from 'react';
+import { Button } from '../../src/button/Button';
+import axios from 'axios';
 export function Work() {
     
 
