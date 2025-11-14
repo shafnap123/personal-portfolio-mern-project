@@ -6,7 +6,9 @@ import { MdLogin } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 import {  FiLogOut } from 'react-icons/fi';
 import image from '../../public/img.jpeg'
-import pdf from '../../public/SHAFNA CV.pdf'
+
+import pdf from "../../src/assets/SHAFNA.P_CV.pdf"
+
 
 
 export function Contact() {
